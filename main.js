@@ -6,8 +6,7 @@ const CODES = {
     GEAR_4: 'Digit4',
     GEAR_5: 'Digit5',
     GEAR_6: 'Digit6',
-    GEAR_SUPER: 'Backslash',
-    CLUTCH: 'AltLeft',
+    CLUTCH: 'ShiftLeft',
     ACCEL: 'KeyW',
     BRAKE: 'KeyS'
 };
@@ -53,6 +52,13 @@ const GEARS_CONFIG = {
         accel: 0.8,
         step: 25,
         value: 5
+    },
+
+    [CODES.GEAR_6]: {
+        maxSpeed: 170,
+        accel: 1,
+        step: 25,
+        value: 6
     },
 };
 
