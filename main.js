@@ -7,8 +7,8 @@ const CODES = {
     GEAR_5: 'Digit5',
     GEAR_6: 'Digit6',
     CLUTCH: 'ShiftLeft',
-    ACCEL: 'KeyW',
-    BRAKE: 'KeyS'
+    ACCEL: 'KeyD',
+    BRAKE: 'KeyA'
 };
 
 const GEARS_CONFIG = {
