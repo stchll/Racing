@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Habibi'
+}
+
+body {
+    overflow: hidden;
+}
+
+.wrap {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.message-popup {
+    position: absolute;
+    padding: 10px;
+    display: none;
+    transform: translate(-50%,-50%);
+    left: 14%;
+    top: 10%;
+    border-radius: 0 10px 10px 0;
+    background-color: #fff;
+    border: 2px dashed #dfdfdf;
+    gap: 10px;
+}
+
+.game-tab {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.distance-travel {
+    width: 100.5%;
+    height: 50px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%,0);
+    background-color: #333;
+}
+
+.distance-travel p {
+    color: #fff;
+
+}
+
+.background-box {
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/Background.png);
+    background-size: cover;
+    background-repeat: repeat-x;
+}
+
+.road-box {
+    width: 100.5%;
+    height: 13vh;
+    background-image: url('./img/road.png');
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: cover;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 49.9%;
+    top: 62%;
+    display: flex;
+    align-items: center;
+
+}
+
+.transport-box {
+    width: 160px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.transport-box  img {
+    width: 90%;
+    cursor: pointer;
+}
+
+
+.stats-tab {
+    width: 100.5%;
+    height: 20dvh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #333333df;
+    border-top: 1px solid #222;
+}
+
+.pedals-box {
+    display: flex;
+    width: 25%;
+    height: 100%;
+}
+
+
+.pedal {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.1s ease;
+    
+}
+
+.pedal.active {
+    filter: brightness(0.4);
+}
+
+
+.pedal p {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+}
+
+.pedal span {
+    font-family: 'Arial';
+    background-color: #00000049;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.pedal img {
+    width: 50%;
+    object-fit: contain;
+    transform: rotateX(0) translateY(0);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+.pedal img:hover {
+    transform: rotateX(40deg) translateY(20%);
+}
+
+
+
+.speed-bar-box {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.speed-bar-box .bar-part {
+    width: 70%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar-part .speed-bar {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 6px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #444;
+}
+
+.bar-part .speed-bar .current-speed {
+    width: 50%;
+    height: 100%;
+    transition: 0.2s ease;
+    background-color: red;
+}
+
+.speed-bar-box .numbers-part {
+    width: 70%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.speed-bar-box .numbers-part p {
+    color: #fff;
+    transition: 0.2s ease;
+}
+
+.stats-tab .gear-box {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats-tab .gear-box p {
+    color: #111;
+}

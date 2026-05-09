@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamaz Race</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Habibi:regular" rel="stylesheet"/>
+</head>
+<body>
+    <div class="wrap">
+        <div class="game-tab">
+            <div class="distance-travel">
+                <p id="distance-label">0km</p>
+            </div>
+
+            <div class="background-box">
+                <div class="road-box">
+                    <div class="transport-box">
+                        <img src="./img/Kamaz.png" alt="Kamaz">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats-tab">
+            <div class="pedals-box">
+                <div class="clutch-box pedal">
+                    <img src="./img/Clutch.png" alt="Clutch">
+
+                    <p>Clutch <span>Alt</span></p>
+                </div>
+
+                <div class="brake-box pedal">
+                    <img src="./img/Brake.png" alt="Brake">
+
+                    <p>Brekit <span>S</span></p>
+                </div>
+
+                <div class="clutch-box pedal">
+                    <img src="./img/Accelerator.png" alt="Accelerator">
+
+                    <p>Accel <span>W</span></p>
+                </div>
+
+
+            </div>
+
+            <div class="speed-bar-box">
+                <div class="bar-part">
+                    <div class="speed-bar">
+                        <div class="current-speed"></div>
+                    </div>
+                </div>
+
+                <div class="numbers-part">
+                    <p>10</p>
+                    <p>50</p>
+                    <p>100</p>
+                    <p>150</p>
+                </div>
+            </div>
+
+            <div class="gear-box">
+                <p id="car-gear-label">N</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
