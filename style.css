@@ -130,6 +130,7 @@ body {
 
 .pedal.active {
     filter: brightness(0.4);
+    transform: rotateX(40deg) translateY(20%);
 }
 
 
@@ -155,10 +156,6 @@ body {
     transform: rotateX(0) translateY(0);
     transition: 0.2s ease-in;
     cursor: pointer;
-}
-
-.pedal img:hover {
-    transform: rotateX(40deg) translateY(20%);
 }
 
 
