@@ -144,6 +144,8 @@ document.addEventListener('keydown', (e) => {
     KEYS_PRESSED.add(code);
 
     if (GEARS_CONFIG[code] && KEYS_PRESSED.has(CODES.CLUTCH)) {
+        e.preventDefault()
+
         if (car.speed < GEARS_CONFIG[code].maxSpeed) {
             car.setGear(GEARS_CONFIG[code]);
         }

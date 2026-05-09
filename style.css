@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Habibi'
+    font-family: 'Habibi';
+    user-select: none;
 }
 
 body {
@@ -218,5 +219,6 @@ body {
 }
 
 .stats-tab .gear-box p {
-    color: #111;
+    color: #fff;
+    font-size: 25px;
 }
